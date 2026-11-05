@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: koya-booking-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: MONGODB_URI
+        sync: false # set in the Render dashboard (MongoDB Atlas connection string)
+      - key: API_KEY
+        sync: false # set in the Render dashboard
