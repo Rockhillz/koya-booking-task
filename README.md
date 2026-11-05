@@ -23,11 +23,11 @@ One Render service serves all of these:
 | `/web/*` | Small backend used only by the web page | No |
 | `/health` | Health check for Render | No |
 
-After deploying, with `https://koya-booking-api.onrender.com` as an example:
+After deploying, with `https://koya-booking-task.onrender.com` as an example:
 
-- **API base URL:** `https://koya-booking-api.onrender.com`
-- **Web page URL:** `https://koya-booking-api.onrender.com/`
-- **API docs:** `https://koya-booking-api.onrender.com/docs`
+- **API base URL:** `https://koya-booking-task.onrender.com`
+- **Web page URL:** `https://koya-booking-task.onrender.com/`
+- **API docs:** `https://koya-booking-task.onrender.com`
 
 ---
 
@@ -47,7 +47,7 @@ Everything is JSON. Every error response is `{"error": "<message>"}`. Every requ
 ### Quick try with curl
 
 ```bash
-BASE=https://koya-booking-api.onrender.com
+BASE=https://koya-booking-task.onrender.com
 KEY=your-api-key
 
 # Load slots
